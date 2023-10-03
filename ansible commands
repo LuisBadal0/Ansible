@@ -25,3 +25,6 @@
 
 ###Give variable value in command line
 # ansible-playbook playbooks/03-variables.yml -e variable1=CommandLine
+
+###get all information about the server
+# ansible qa -m setup
