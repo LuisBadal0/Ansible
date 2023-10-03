@@ -13,3 +13,12 @@
 
 ###Search intances in a specific environment -> qa
 # ansible qa -a "uname"
+
+###List all hosts
+# ansible --list-host all
+
+###List all except first(name) group
+# ansible --list-host \!first
+
+###Execute yml ping file(root directory)
+# ansible-playbook playbooks/01-ping.yml
