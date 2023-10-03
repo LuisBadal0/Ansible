@@ -1,0 +1,2 @@
+###Ping servers
+# ansible -m ping all
