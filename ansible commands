@@ -37,3 +37,6 @@
 
 ###Ansible dynamic inventory
 # install boto3 
+
+###Show list with server to dynamic invetory
+# ansible-inventory --list
