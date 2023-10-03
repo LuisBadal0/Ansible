@@ -1,4 +1,10 @@
-[dev]
-13.40.71.247
-18.168.204.68
-13.41.56.14
+[Dev]
+Dev1 ansible_host=13.40.71.247
+Dev2 ansible_host=18.168.204.68
+
+[Qa]
+Qa1 ansible_host=13.41.56.14
+
+[first]
+dev1
+qa1

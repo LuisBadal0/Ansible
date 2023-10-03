@@ -1,2 +1,15 @@
 ###Ping servers
 # ansible -m ping all
+
+###See allthe servers
+# ansible all -a "whoami"
+
+###Connect to a specific instance
+#               (Private Key)                     (IP from server)
+# ssh -vvv -i ~/aws/aws_keys/default-ec2.pem ec2-user@13.41.56.14
+
+###Find OS of all EC2 instances
+# ansible all -a "uname"
+
+###Search intances in a specific environment -> qa
+# ansible qa -a "uname"
