@@ -1,7 +1,7 @@
 ###Ping servers
 # ansible -m ping all
 
-###See allthe servers
+###See all the servers
 # ansible all -a "whoami"
 
 ###Connect to a specific instance
@@ -26,5 +26,11 @@
 ###Give variable value in command line
 # ansible-playbook playbooks/03-variables.yml -e variable1=CommandLine
 
-###get all information about the server
+###Get all information about the server
 # ansible qa -m setup
+
+###List tasks from the playbook
+# ansible-playbook playbooks/06-playbooks.yml ---list-tasks
+
+###Ping specific host
+# ansible-playbook -l qa playbooks/01-ping.yml
