@@ -34,3 +34,6 @@
 
 ###Ping specific host
 # ansible-playbook -l qa playbooks/01-ping.yml
+
+###Ansible dynamic inventory
+# boto3 & botocore
