@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  tasks:
+    - ec2:
+        key_name: default-ec2
+        instance_type: t2.micro
+        image: ami-0b25f6ba2f4419235
+        region: eu-west-2
+        count: 1
+        vpc_subnet_id: subnet-0ab30df0d626c6175
+        assign_public_ip: yes
+        group: ["http_server_sg"]
+        instance_tags: {type: http, Environment: QA}
+        wait: yes
+      register: ec2_output
+    - debug: var=ec2_output
